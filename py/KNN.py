@@ -27,7 +27,7 @@ def file2Matrix(filename):
     return returnMat, classLabelVector
 
 def main():
-    returnMat, classLabelVector =file2Matrix("D:\PythonProjects\AiLearning\data\KNNData")
+    returnMat, classLabelVector =file2Matrix("./data/KNNData")
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ax.scatter(returnMat[:,0],returnMat[:,1], 15.0* np.array(classLabelVector), 15.0*np.array(classLabelVector))
